@@ -3,6 +3,7 @@ set(MCRL2_TOOLS
   mcrl2transform
   mcrl2typecheck
   pbes2bdd
+  pbes2pg
   pbestransform
   reduce_pbes
   reduce_process

@@ -252,7 +252,11 @@ class pbespgsolve_algorithm
       mCRL2log(log::verbose) << "Game: " << pg.graph().V() << " vertices, " << pg.graph().E() << " edges." << std::endl;
       m_timer.finish("initialization");
 
-      return run(pg, goal_v);
+      if (!m_options.only_generate) {
+        return run(pg, goal_v);
+      } else {
+        return true;
+      }
     }
 };
 

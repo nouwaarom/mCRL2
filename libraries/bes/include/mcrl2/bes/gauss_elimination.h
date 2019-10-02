@@ -129,6 +129,15 @@ bool gauss_elimination(boolean_equation_system& p)
   pbes_system::gauss_elimination_algorithm<bes_traits> algorithm;
   bes_rewriter besr;
   algorithm.run(p.equations().begin(), p.equations().end(), boolean_equation_solver<bes_rewriter>(besr));
+  for (auto &equation : p.equations()) {
+      std::cout << equation.variable().name() << ":";
+      if (tr::is_true(equation.formula())) {
+          std::cout << "true";
+      } else if (tr::is_false(equation.formula())) {
+          std::cout << "false";
+      }
+      std::cout << " ";
+  }
   if (tr::is_false(p.equations().front().formula()))
   {
     return false;

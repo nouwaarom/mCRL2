@@ -18,7 +18,7 @@
 #include "mcrl2/bes/io.h"
 #include "mcrl2/data/rewriter_tool.h"
 #include "mcrl2/pbes/detail/bes_equation_limit.h"
-#include "mcrl2/pg/pbespgsolve.h"
+#include "mcrl2/pg/pbes2pg.h"
 #include "mcrl2/utilities/execution_timer.h"
 #include "mcrl2/utilities/input_tool.h"
 

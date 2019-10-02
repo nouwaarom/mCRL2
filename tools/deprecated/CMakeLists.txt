@@ -2,7 +2,7 @@ set(MCRL2_TOOLS
   formulacheck
   lps2torx
   lpsrealzone
-  pbesabstract
+# pbesabstract
 )
 
 if(MCRL2_ENABLE_DEPRECATED)
