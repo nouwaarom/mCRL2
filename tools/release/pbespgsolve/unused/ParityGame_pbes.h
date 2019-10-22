@@ -8,10 +8,8 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 
 #include "mcrl2/pbes/parity_game_generator.h"
-#include "mcrl2/pbes/parity_game_generator_deprecated.h"
 
-typedef mcrl2::pbes_system::parity_game_generator_deprecated pg_generator;
-
+// TODO, check if this is correct.
 inline
 void ParityGame::assign_pbes( mcrl2::pbes_system::pbes &pbes,
     verti *goal_vertex, StaticGraph::EdgeDirection edge_dir, mcrl2::data::rewriter::strategy rewrite_strategy )

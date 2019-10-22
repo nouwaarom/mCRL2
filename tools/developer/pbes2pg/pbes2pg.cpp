@@ -81,6 +81,7 @@ class pg_converter_tool : public rewriter_tool<pbes_input_tool<pg_output_tool<in
     bool run() {
       pbes p;
       mcrl2::bes::load_pbes(p, input_filename(), pbes_input_format());
+      pbes_system::algorithms::instantiate_global_variables(p);
 
       mCRL2log(log::verbose) << "Generating parity game..."  << std::endl;
       // Generate the game from a PBES:
