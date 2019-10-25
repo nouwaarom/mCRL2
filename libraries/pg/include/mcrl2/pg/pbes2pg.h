@@ -222,6 +222,8 @@ class pbespgsolve_algorithm
         ParityGame::Strategy solution = solver->solve();
         m_timer.finish("solving");
 
+        pg.write_debug(solution, std::cout);
+
         if (solution.empty())
         {
           throw mcrl2::runtime_error("pbespgsolve: solving failed!\n");

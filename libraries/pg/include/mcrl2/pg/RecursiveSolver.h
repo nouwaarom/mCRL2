@@ -57,7 +57,7 @@ public:
         }
     }
 
-    //! Swaps this substrategy ovbect with another.
+    //! Swaps this substrategy object with another.
     void swap(Substrategy &other)
     {
         strategy_.swap(other.strategy_);
